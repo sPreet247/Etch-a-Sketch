@@ -7,4 +7,7 @@ for (let i = 0; i <= 255; i++) {
   Div.style.border = "1px solid black";
 
   Container.appendChild(Div);
+  Div.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor = "white";
+  });
 }

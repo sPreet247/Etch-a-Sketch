@@ -20,3 +20,11 @@ for (let i = 0; i <= 255; i++) {
     return color;
   }
 }
+
+function reset() {
+  window.location.reload();
+}
+
+function grid() {
+  const gridNum = prompt("Please enter a valid number of grid");
+}

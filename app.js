@@ -1,4 +1,5 @@
 const Container = document.querySelector(".container");
+const Button = document.querySelector("button");
 
 for (let i = 0; i <= 255; i++) {
   const Div = document.createElement("div");
@@ -10,15 +11,7 @@ for (let i = 0; i <= 255; i++) {
   Div.addEventListener("mouseover", (e) => {
     e.target.style.backgroundColor = get_random_hex_color();
   });
-
-  function get_random_hex_color() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
+  get_random_hex_color();
 }
 
 function reset() {
@@ -27,4 +20,12 @@ function reset() {
 
 function grid() {
   const gridNum = prompt("Please enter a valid number of grid");
+}
+function get_random_hex_color() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }

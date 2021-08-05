@@ -12,9 +12,8 @@ for (let i = 0; i <= 255; i++) {
     e.target.style.backgroundColor = get_random_hex_color();
   });
   get_random_hex_color();
-  Button.addEventListener(["click"], (e) => {
+  Button.addEventListener("click", (e) => {
     reset();
-    grid();
   });
 }
 
@@ -24,10 +23,6 @@ function reset() {
 
 function grid() {
   let gridNum;
-  while (gridNum !== Number) {
-    window.prompt("Please enter a valid number for grid");
-    gridNum++;
-  }
 }
 function get_random_hex_color() {
   var letters = "0123456789ABCDEF";

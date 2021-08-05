@@ -14,6 +14,7 @@ for (let i = 0; i <= 255; i++) {
   get_random_hex_color();
   Button.addEventListener("click", (e) => {
     reset();
+    grid();
   });
 }
 
@@ -22,7 +23,10 @@ function reset() {
 }
 
 function grid() {
-  let gridNum;
+  let gridNum = prompt("Please enter a positive number", "0");
+  while (gridNum <= 0) {
+    return gridNum;
+  }
 }
 function get_random_hex_color() {
   var letters = "0123456789ABCDEF";

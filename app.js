@@ -22,7 +22,7 @@ function reset() {
 }
 
 function grid() {
-  let gridNum = prompt("Please enter a positive number", "0");
+  let gridNum = prompt("Please enter a positive number");
   while (gridNum <= 0) {
     return gridNum;
   }

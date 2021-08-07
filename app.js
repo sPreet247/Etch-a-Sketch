@@ -14,7 +14,6 @@ for (let i = 0; i <= 255; i++) {
   get_random_hex_color();
   Button.addEventListener("click", (e) => {
     reset();
-    grid();
   });
 }
 
